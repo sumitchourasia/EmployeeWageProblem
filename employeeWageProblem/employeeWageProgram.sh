@@ -1,6 +1,13 @@
-#!/bin/bash
-set -x
-#Employee Wage Program Implementation
 
-echo "	WELCOME TO EMPLOYEE WAGE COMPUTATION PROGRAM  "
+function AttendanceCheck()
+{
+	local present=$(( $RANDOM % 20 ))
+	if [ "$present" != "0" ]
+	then
+        	echo "is present"
+	else
+        	echo "is absent"
+	fi
+	return $present
+}
 

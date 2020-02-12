@@ -1,10 +1,10 @@
-
+<<<<<<< HEAD
 #!/bin/bash
 set -x
 #EMPLOYEE WAGE COMPUTATION PROGRAM IMPLEMENTATION
 
 echo "EMPLOYEE WAGE COMPUTATION PROGRAM IMPLEMENTATION"
-
+=======
 
 function AttendanceCheck()
 {

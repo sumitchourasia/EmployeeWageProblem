@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -66,7 +65,11 @@ function CaseStatement()
 		esac
 	done
 }
+
+<<<<<<< HEAD
 =======
+
+
 
 function CaseStatement()
 {
@@ -96,10 +99,10 @@ function CaseStatement()
                          parttimewageis=$?
                          echo "part time wage : $parttimewageis"
                          ;;
-		4) 
-			 CalculateWagePerMonth
-			 echo "wage per month : $wagepermonth "
-			 ;;
+                4)
+                         CalculateWagePerMonth
+                         echo "wage per month : $wagepermonth "
+                         ;;
                 0)
                         exit 0
                         ;;
@@ -135,7 +138,4 @@ function CaseStatement()
 
 
 
-
-
 >>>>>>> useCase-5_Wage_Per_Month
-

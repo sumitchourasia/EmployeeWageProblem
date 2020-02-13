@@ -30,7 +30,6 @@ function PartTimeWage()
         part_time_wage=`expr $part_time_hour \* $wage_per_hour`
         return $part_time_wage
 }
-
 function CaseStatement()
 {	
 	

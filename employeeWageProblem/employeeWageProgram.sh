@@ -17,5 +17,3 @@ function AttendanceCheck()
 	fi
 	return $present
 }
-
-

@@ -58,6 +58,11 @@ function CaseStatement()
 			 parttimewage=$?
 			 echo "part time wage : $parttimewage"
 			 ;;
+		4)
+			CalculateWagePerMonth
+			monthlywage=$?
+			echo "monthly wage : $monthlywage"
+			;;
 	 	0)
 			exit 0 
 			;;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -29,7 +30,7 @@ function PartTimeWage()
         wage_per_hour=20
         part_time_wage=`expr $part_time_hour \* $wage_per_hour`
         return $part_time_wage
-}
+=======
 
 function CaseStatement()
 {	
@@ -64,5 +65,7 @@ function CaseStatement()
 			;;
 		esac
 	done
+		
+>>>>>>> useCase-4_case_statement
 }
 

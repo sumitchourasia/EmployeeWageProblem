@@ -1,12 +1,14 @@
 
+
+
 function AttendanceCheck()
 {
 	local present=$(( $RANDOM % 20 ))
 	if [ "$present" != "0" ]
 	then
-        	echo "is present"
+        	echo "employee is present"
 	else
-        	echo "is absent"
+        	echo "employee is absent"
 	fi
 	return $present
 }

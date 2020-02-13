@@ -1,6 +1,3 @@
-
-
-
 function AttendanceCheck()
 {
 	local present=$(( $RANDOM % 20 ))

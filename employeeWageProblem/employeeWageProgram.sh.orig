@@ -1,12 +1,9 @@
-
-function DailyWage()
-{
-	wage_per_hour=20
-	full_day_hour=8
-	daily_wage=`expr $wage_per_hour \* $full_day_hour `
-	return $daily_wage
-}
-<<<<<<< HEAD
+<<<<<<< .merge_file_a16884
 =======
+#!/bin/bash
+set -x
+# employee wage computation program implementation
+echo " welcome to the employee wage computation program "
 
->>>>>>> useCase-2_calculate_daily_wage
+>>>>>>> .merge_file_a16024
+

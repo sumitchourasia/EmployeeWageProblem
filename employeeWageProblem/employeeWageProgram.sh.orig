@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 
 
+
+<<<<<<< .merge_file_a18128
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -8,6 +9,19 @@ echo " welcome to the employee wage computation program "
 
 
 
+
+
 =======
-echo "just to facilitate merge conflict"
->>>>>>> temp_branch
+function AttendanceCheck()
+{
+	local present=$(( $RANDOM % 20 ))
+	if [ "$present" != "0" ]
+	then
+        	echo "employee is present"
+	else
+        	echo "employee is absent"
+	fi
+	return $present
+}
+>>>>>>> .merge_file_a07336
+

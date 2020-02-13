@@ -1,36 +1,3 @@
-bin/bash
-#set -x
-# employee wage computation program implementation
-echo " welcome to the employee wage computation program "
-
-function AttendanceCheck()
-{
-        local present=$(( $RANDOM % 20 ))
-        if [ "$present" != "0" ]
-        then
-                echo "employee is present"
-        else
-                echo "employee is absent"
-        fi
-        return $present
-}
-
-function CalculateDailyEmployeeWage()
-{
-        wageperhour=20
-        hoursperday=8
-        dailywage=`expr $wageperhour \* $hoursperday`
-        return $dailywage
-}
-
-function PartTimeWage()
-{
-        part_time_hour=8
-        wage_per_hour=20
-        part_time_wage=`expr $part_time_hour \* $wage_per_hour`
-        return $part_time_wage
-}
-
 
 function CaseStatement()
 {
@@ -42,7 +9,7 @@ function CaseStatement()
         echo "4 - Calculate_Full_Month_Wage "
         echo "5 - calculate_Wage_Till_Working_hour_or_day "
         echo "6 - "
-        read input
+
         while :
         do
         read input
@@ -57,13 +24,12 @@ function CaseStatement()
                         ;;
                 3)
                          PartTimeWage
-                         parttimewage=$?
-                         echo "part time wage : $parttimewage"
+                         parttimewageis=$?
+                         echo "part time wage : $parttimewageis"
                          ;;
 		4) 
 			 CalculateWagePerMonth
-			 monthlywage=$?
-			 echo "wage per month : $monthlywage"
+			 echo "wage per month : $wagepermonth "
 			 ;;
                 0)
                         exit 0
@@ -72,16 +38,6 @@ function CaseStatement()
         done
 }
 
-function CalculateWagePerMonth()
-{
-	 days=20
-	 CalculateDailyEmployeeWage
-	 local dailywage=$?
-	 wagepermonth=`expr $dailywage \* $days`
-	 return $wagepermonth
-}
-
- CaseStatement
 
 
 

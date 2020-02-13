@@ -1,6 +1,1 @@
-#!/bin/bash
-set -x
-#EMPLOYEE WAGE COMPUTATION PROGRAM IMPLEMENTATION
-
-echo "EMPLOYEE WAGE COMPUTATION PROGRAM IMPLEMENTATION"
-
+echo "just to facilitate merge conflict"

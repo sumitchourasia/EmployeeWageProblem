@@ -1,9 +1,13 @@
-<<<<<<< .merge_file_a16884
-=======
+<<<<<<< HEAD
+
+
 #!/bin/bash
 set -x
 # employee wage computation program implementation
 echo " welcome to the employee wage computation program "
 
->>>>>>> .merge_file_a16024
 
+
+=======
+echo "just to facilitate merge conflict"
+>>>>>>> temp_branch

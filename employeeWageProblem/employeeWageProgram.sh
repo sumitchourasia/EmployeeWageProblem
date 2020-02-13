@@ -1,4 +1,5 @@
 
+
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -15,5 +16,9 @@ function AttendanceCheck()
 	fi
 	return $present
 }
+
+
+
+
 
 

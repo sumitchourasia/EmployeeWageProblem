@@ -1,17 +1,10 @@
+<<<<<<< HEAD
 
-
-
-<<<<<<< .merge_file_a18128
 #!/bin/bash
 set -x
 # employee wage computation program implementation
 echo " welcome to the employee wage computation program "
-
-
-
-
-
-=======
+ 
 function AttendanceCheck()
 {
 	local present=$(( $RANDOM % 20 ))
@@ -23,5 +16,9 @@ function AttendanceCheck()
 	fi
 	return $present
 }
->>>>>>> .merge_file_a07336
 
+
+=======
+echo "changed the code"
+echo "just to facilitate merge conflict"
+>>>>>>> temp_branch

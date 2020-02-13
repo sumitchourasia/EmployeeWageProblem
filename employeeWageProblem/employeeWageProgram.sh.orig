@@ -1,5 +1,4 @@
-
-
+<<<<<<< HEAD
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -17,12 +16,21 @@ function AttendanceCheck()
 	return $present
 }
 
-<<<<<<< HEAD
-
-
-
-
+function CalculateDailyEmployeeWage()
+{
+        wageperhour=20
+        hoursperday=8
+        dailywage=`expr $wageperhour \* $hoursperday`
+        return $dailywage
+}
 
 =======
-echo "changes made to for commiting purpose"
->>>>>>> useCase-2_calculate_daily_wage
+function PartTimeWage()
+{
+        part_time_hour=8
+        wage_per_hour=20
+        part_time_wage=`expr $part_time_hour \* $wage_per_hour`
+        return $part_time_wage
+}
+>>>>>>> useCase-3_Part_Time_wage
+

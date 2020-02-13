@@ -7,3 +7,4 @@ function DailyWage()
 	return $daily_wage
 }
 
+echo "changes made to for commiting purpose"

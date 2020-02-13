@@ -27,6 +27,8 @@ function CaseStatement()
 			 parttimewage=$?
 			 echo "part time wage : $parttimewage"
 			 ;;
+		4)
+
 	 	0)
 			exit 0 
 			;;

@@ -17,5 +17,5 @@ function AttendanceCheck()
 	fi
 	return $present
 }
->>>>>>> useCase-1_branch_for_Attendance_check
+
 

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 #!/bin/bash
 set -x
@@ -17,8 +17,12 @@ function AttendanceCheck()
 	return $present
 }
 
+<<<<<<< HEAD
+
+
+
+
 
 =======
-echo "changed the code"
-echo "just to facilitate merge conflict"
->>>>>>> temp_branch
+echo "changes made to for commiting purpose"
+>>>>>>> useCase-2_calculate_daily_wage

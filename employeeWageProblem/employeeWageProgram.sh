@@ -9,7 +9,6 @@ function CaseStatement()
 	echo "4 - Calculate_Full_Month_Wage "
 	echo "5 - Calculate_Wage_Till_Working_hour_or_day "
 	echo "6 - work hours"
-	read input
 	while :
 	do
 	read input

@@ -6,7 +6,6 @@ echo " welcome to the employee wage computation program "
  
 function AttendanceCheck()
 {
-<<<<<<< HEAD
 	local present=$(( $RANDOM % 20 ))
 	if [ "$present" != "0" ]
 	then
@@ -15,13 +14,6 @@ function AttendanceCheck()
         	echo "employee is absent"
 	fi
 	return $present
-=======
-	echo "enter the wage : "
-	read wage
-	workhours=$(( $wage / 20 ))
-	echo "work hour : $workhours"
-	return $workhours
->>>>>>> useCase-7_Work_Hours
 }
 
 function CalculateDailyEmployeeWage()

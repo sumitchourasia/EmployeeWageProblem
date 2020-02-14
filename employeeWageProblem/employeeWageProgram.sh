@@ -1,5 +1,51 @@
-#!/bin/bash
-set -x
-# employee wage computation program implementation
-echo " welcome to the employee wage computation program "
+
+function WagesTillWorkingHoursOrDays()
+{
+	echo "inside function"
+	hoursworked=0
+	daysworked=0
+	totalwage=0
+	times=0
+	parttimewage=0
+	while [ "$hoursworked" -lt "100" -a "$daysworked" -lt "20" -a "$times" -lt "20" ]
+	do
+		echo "inside while"
+		times=$(($times + 1))
+		AttendanceCheck
+		attendance=$?	
+		if [ "$attendance" -ne "0" ]
+		then
+			daysworked=$(($daysworked + 1))
+			CalculateDailyEmployeeWage
+			dailywage=$?
+			hoursworked=$(( $hoursworked + 8 ))
+			if [ "$hoursworked" -gt "100" ]
+			then
+				temp=$(( $hoursworked - 100 ))
+				hoursworked=$(( $hoursworked - temp ))
+				dailywage=0
+				parttimewage=`expr $temp \* 20` 
+			fi
+			totalwage=$(( $totalwage + $dailywage + $parttimewage ))
+		 fi
+		 echo " "
+	 done
+	 return $totalwage	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

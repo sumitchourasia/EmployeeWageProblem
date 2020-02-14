@@ -59,13 +59,18 @@ function CaseStatement()
 			 parttimewage=$?
 			 echo "part time wage : $parttimewage"
 			 ;;
+		4)
+			CalculateWagePerMonth
+			monthlywage=$?
+			echo "monthly wage : $monthlywage"
+			;;
 	 	0)
 			exit 0 
 			;;
 		esac
 	done
 }
-=======
+
 function CalculateWagePerMonth()
 {
 	days=20
@@ -74,6 +79,41 @@ function CalculateWagePerMonth()
 	monthlywage=`expr $dailywage \* $days`
 	return $monthlywage
 }
+=======
+
+function WagesTillWorkingHoursOrDays()
+{
+	echo "inside function"
+	hoursworked=0
+	daysworked=0
+	totalwage=0
+	times=0
+	parttimewage=0
+	while [ "$hoursworked" -lt "100" -a "$daysworked" -lt "20" -a "$times" -lt "20" ]
+	do
+		echo "inside while"
+		times=$(($times + 1))
+		AttendanceCheck
+		attendance=$?	
+		if [ "$attendance" -ne "0" ]
+		then
+			daysworked=$(($daysworked + 1))
+			CalculateDailyEmployeeWage
+			dailywage=$?
+			hoursworked=$(( $hoursworked + 8 ))
+			if [ "$hoursworked" -gt "100" ]
+			then
+				temp=$(( $hoursworked - 100 ))
+				hoursworked=$(( $hoursworked - temp ))
+				dailywage=0
+				parttimewage=`expr $temp \* 20` 
+			fi
+			totalwage=$(( $totalwage + $dailywage + $parttimewage ))
+		 fi
+		 echo " "
+	 done
+	 return $totalwage	
+}
 
 
 
@@ -89,5 +129,6 @@ function CalculateWagePerMonth()
 
 
 
->>>>>>> useCase-5_Wage_Per_Month
+>>>>>>> useCase-6_wage_till_working_hour_or_days
+
 

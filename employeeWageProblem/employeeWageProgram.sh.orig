@@ -79,7 +79,6 @@ function CalculateWagePerMonth()
 	monthlywage=`expr $dailywage \* $days`
 	return $monthlywage
 }
-=======
 
 function WagesTillWorkingHoursOrDays()
 {
@@ -114,6 +113,16 @@ function WagesTillWorkingHoursOrDays()
 	 done
 	 return $totalwage	
 }
+=======
+
+function CalculateWorkHours()
+{
+	echo "enter the wage : "
+	read wage
+	workhours=$(( $wage / 20 ))
+	echo "work hour : $workhours"
+
+}
 
 
 
@@ -129,6 +138,9 @@ function WagesTillWorkingHoursOrDays()
 
 
 
->>>>>>> useCase-6_wage_till_working_hour_or_days
+
+
+
+>>>>>>> useCase-7_Work_Hours
 
 

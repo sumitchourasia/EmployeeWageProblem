@@ -1,3 +1,4 @@
+
 #!/bin/bash
 set -x
 # employee wage computation program implementation
@@ -112,5 +113,16 @@ function WagesTillWorkingHoursOrDays()
 	 done
 	 return $totalwage	
 }
+
+function CalculateWorkHours()
+{
+	echo "enter the wage : "
+	read wage
+	workhours=$(( $wage / 20 ))
+	echo "work hour : $workhours"
+
+}
+
+
 
 

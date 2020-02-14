@@ -31,10 +31,8 @@ function PartTimeWage()
         return $part_time_wage
 }
 
-
 function CaseStatement()
 {
-
         echo "select the operation"
         echo "1 -  Attendance check"
         echo "2 -  Calculate_Daily_Employee_Wage"
@@ -124,7 +122,6 @@ function CalculateWorkHours()
         echo "work hour : $workhours"
 	return $workhours	
 }
-
 
 function DailyWageAndTotalWage()
 {

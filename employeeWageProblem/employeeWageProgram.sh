@@ -39,7 +39,9 @@ function CaseStatement()
         echo "3 - Part_Time_Wage"
         echo "4 - Calculate_Full_Month_Wage "
         echo "5 - calculate_Wage_Till_Working_hour_or_day "
-        echo "6 - "
+	echo "6 - work hours"
+        echo "7 - store dailywage and total wage "
+	echo "8 - store date dailywage and total wage "
         read input
         while :
         do

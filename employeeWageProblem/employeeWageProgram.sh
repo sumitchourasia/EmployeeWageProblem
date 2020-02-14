@@ -9,6 +9,9 @@ function CaseStatement()
 	echo "4 - Calculate_Full_Month_Wage "
 	echo "5 - Calculate_Wage_Till_Working_hour_or_day "
 	echo "6 - work hours"
+	echo "7 - store dailywage and total wage "
+	echo "8 - store date dailywage and total wage "
+	echo "0 - exit"
 	while :
 	do
 	read input
@@ -38,6 +41,11 @@ function CaseStatement()
 		6)
 			CalculateWorkHours
 			echo "work hours : $workhours"
+			;;
+		7)
+
+			;;
+		8)
 			;;
 	 	0)
 			exit 0 

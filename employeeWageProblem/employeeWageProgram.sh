@@ -1,12 +1,7 @@
-
-function DailyWageAndTotalWage()
-{
-	CalculateDailyEmployeeWage
-	dailywage=$?
-	CalculateWagePerMonth
-	echo "Daily Wage : $dailywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
-	echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
-}
+#!/bin/bash
+set -x
+# employee wage computation program implementation
+echo " welcome to the employee wage computation program "
 
 function AttendanceCheck()
 {
@@ -130,4 +125,13 @@ function CalculateWorkHours()
 	return $workhours	
 }
 
+
+function DailyWageAndTotalWage()
+{
+        CalculateDailyEmployeeWage
+        dailywage=$?
+        CalculateWagePerMonth
+        echo "Daily Wage : $dailywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
+        echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
+}
 

@@ -1,7 +1,6 @@
 
 function WagesTillWorkingHoursOrDays()
 {
-	echo "inside function"
 	hoursworked=0
 	daysworked=0
 	totalwage=0
@@ -9,7 +8,6 @@ function WagesTillWorkingHoursOrDays()
 	parttimewage=0
 	while [ "$hoursworked" -lt "100" -a "$daysworked" -lt "20" -a "$times" -lt "20" ]
 	do
-		echo "inside while"
 		times=$(($times + 1))
 		AttendanceCheck
 		attendance=$?	
@@ -28,7 +26,6 @@ function WagesTillWorkingHoursOrDays()
 			fi
 			totalwage=$(( $totalwage + $dailywage + $parttimewage ))
 		 fi
-		 echo " "
 	 done
 	 return $totalwage	
 }

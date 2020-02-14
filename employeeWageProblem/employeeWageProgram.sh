@@ -36,6 +36,9 @@ function CaseStatement()
 			WagesTillWorkingHoursOrDays
 			echo "total wage : $totalwage"
 			;;
+		6)
+
+			;;
 	 	0)
 			exit 0 
 			;;

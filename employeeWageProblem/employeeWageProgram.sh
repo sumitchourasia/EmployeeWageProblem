@@ -32,6 +32,10 @@ function CaseStatement()
 			monthlywage=$?
 			echo "monthly wage : $monthlywage"
 			;;
+		5)
+			WagesTillWorkingHoursOrDays
+			echo "total wage : $totalwage"
+			;;
 	 	0)
 			exit 0 
 			;;

@@ -1,5 +1,12 @@
-#!/bin/bash
-set -x
-# employee wage computation program implementation
-echo " welcome to the employee wage computation program "
 
+function DayDailyWageAndTotalWage()
+{
+	echo "enter the day" 
+	read day
+        CalculateDailyEmployeeWage
+        dailywage=$?
+        CalculateWagePerMonth
+	echo "Day : $day " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
+        echo "Daily Wage : $dailywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
+        echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
+}

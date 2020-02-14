@@ -43,9 +43,10 @@ function CaseStatement()
 			echo "work hours : $workhours"
 			;;
 		7)
-
+			DailyWageAndTotalWage
 			;;
 		8)
+			
 			;;
 	 	0)
 			exit 0 

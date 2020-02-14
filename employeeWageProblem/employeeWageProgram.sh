@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 # employee wage computation program implementation
 echo " welcome to the employee wage computation program "
 
@@ -63,6 +63,20 @@ function CaseStatement()
                         monthlywage=$?
                         echo "monthly wage : $monthlywage"
                         ;;
+		5)
+			WagesTillWorkingHoursOrDays
+			echo "total wage : $totalwage"
+			;;
+		6)
+			CalculateWorkHours
+			echo "work hours : $workhours"
+			;;
+		7)
+			DailyWageAndTotalWage
+			;;
+		8)
+			DayDailyWageAndTotalWage
+			;;
                 0)
                         exit 0
                         ;;
@@ -143,3 +157,4 @@ function DayDailyWageAndTotalWage()
         echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
 }
 
+CaseStatement

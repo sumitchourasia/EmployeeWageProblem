@@ -62,7 +62,6 @@ function CaseStatement()
                          ;;
                 4)
                         CalculateWagePerMonth
-                        monthlywage=$?
                         echo "monthly wage : $monthlywage"
                         ;;
 		5)
@@ -131,8 +130,7 @@ function CalculateWorkHours()
         echo "enter the wage : "
         read wage
         workhours=$(( $wage / 20 ))
-        echo "work hour : $workhours"
-	return $workhours	
+    	return $workhours	
 }
 
 function DailyWageAndTotalWage()

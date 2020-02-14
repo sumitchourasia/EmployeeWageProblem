@@ -1,8 +1,5 @@
-#!/bin/bash
-set -x
-# employee wage computation program implementation
-echo " welcome to the employee wage computation program "
 
+<<<<<<< HEAD
 function AttendanceCheck()
 {
         local present=$(( $RANDOM % 20 ))
@@ -113,6 +110,7 @@ function WagesTillWorkingHoursOrDays()
          return $totalwage
 }
 
+
 function CalculateWorkHours()
 {
         echo "enter the wage : "
@@ -131,6 +129,7 @@ function DailyWageAndTotalWage()
         echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
 }
 
+=======
 function DayDailyWageAndTotalWage()
 {
 	echo "enter the day" 
@@ -142,4 +141,4 @@ function DayDailyWageAndTotalWage()
         echo "Daily Wage : $dailywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
         echo "Total Wage : $monthlywage " >> ./employeeWageProblem/DailyWageAndTotalWage.txt
 }
-
+>>>>>>> useCase-9_Store_Day_Dailywage_TotalWage

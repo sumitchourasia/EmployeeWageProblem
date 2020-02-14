@@ -3,12 +3,12 @@ function CaseStatement()
 {	
 	
 	echo "select the operation"
-	echo "1 -  Attendance check"
-	echo "2 -  Calculate_Daily_Employee_Wage"
+	echo "1 - Attendance check"
+	echo "2 - Calculate_Daily_Employee_Wage"
 	echo "3 - Part_Time_Wage"
 	echo "4 - Calculate_Full_Month_Wage "
-	echo "5 - calculate_Wage_Till_Working_hour_or_day "
-	echo "6 - "
+	echo "5 - Calculate_Wage_Till_Working_hour_or_day "
+	echo "6 - work hours"
 	read input
 	while :
 	do
@@ -37,7 +37,8 @@ function CaseStatement()
 			echo "total wage : $totalwage"
 			;;
 		6)
-
+			CalculateWorkHours
+			echo "work hours : $workhours"
 			;;
 	 	0)
 			exit 0 

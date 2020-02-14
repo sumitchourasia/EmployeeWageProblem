@@ -31,7 +31,6 @@ function CaseStatement()
 			 ;;
 		4)
 			CalculateWagePerMonth
-			monthlywage=$?
 			echo "monthly wage : $monthlywage"
 			;;
 		5)

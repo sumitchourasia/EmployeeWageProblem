@@ -1,0 +1,5 @@
+Daily Wage : 160 
+Total Wage : 3200 
+Day : monday 
+Daily Wage : 160 
+Total Wage : 3200 

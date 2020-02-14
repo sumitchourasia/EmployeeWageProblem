@@ -46,7 +46,7 @@ function CaseStatement()
 			DailyWageAndTotalWage
 			;;
 		8)
-			
+			DayDailyWageAndTotalWage
 			;;
 	 	0)
 			exit 0 
